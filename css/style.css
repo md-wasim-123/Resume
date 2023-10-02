@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Fjalla+One&family=Raleway&family=Roboto:wght@700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  position: relative;
+  background-color: rgb(231, 231, 231);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000;
+}
+body::before {
+  content: "Resume";
+  position: absolute;
+  font-size: 19rem;
+  z-index: -100;
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+  color: #363636;
+ overflow-x:  hidden;
+}
+.container {
+  max-width: 750px;
+  min-height: 990px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.slid-left {
+  position: relative;
+  width: 100%;
+  background-color: #120029;
+  border-radius: 5px 0 0 5px;
+  z-index: -50;
+}
+
+.profile-text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+ 
+  background-color: #120029;
+  z-index: -1;
+}
+.profile-text #img-box {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: rgb(255, 224, 26);
+}
+#img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#img-box::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -100px;
+  background-image: url("/pngwing.com.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+
+.profile-text .text-box {
+  text-align: center;
+}
+.profile-text .text-box h1 {
+  position: relative;
+  font-weight: 900;
+  line-height: 2.2rem;
+  margin-top: 1px;
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+  z-index: 900;
+}
+.profile-text .text-box span {
+  opacity: 9;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+/*  =================contact section====================  */
+.contact-info {
+  width: 100%;
+  position: relative;
+  padding: 4px;
+  margin-top: 2rem;
+}
+.contact-info .contact {
+  width: 100%;
+  position: relative;
+}
+.contact-info .contact h2 {
+  font-size: 1.4vw;
+  line-height: 3rem;
+  margin-left: 0.8rem;
+  color: white;
+}
+.contact-info .contact ul {
+  display: flex;
+ 
+  flex-direction: column;
+  list-style: none;
+}
+.contact-info .contact ul li {
+  padding: 5px;
+  color: white;
+}
+.contact-info .contact ul li i {
+  margin: 0px 20px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 1.2vw;
+  color: rgb(8, 229, 0);
+ 
+}
+.contact-info .contact ul li span {
+  font-size: 1.2vw;
+  opacity: 0.7;
+}
+/* =================education section==================== */
+.contact-info .contact .Education {
+  font-size: 2wv;
+  font-weight: 300;
+  margin-left: 0.8rem;
+}
+
+.contact-info .contact ul li h5 {
+  margin-top: 15px;
+  color: rgb(8, 229, 0);
+}
+.contact-info .contact ul li h4 {
+  margin-top: 16px;
+  font-size: 16px;
+}
+.contact-info .contact ul li h4:nth-child(3) {
+  margin-top: 8px;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+.parcent {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin-top: 10px;
+  background-color: rgb(141, 141, 141);
+  border-radius: 5px;
+}
+.parcent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(8, 229, 0);
+}
+/* ================slid-right section box==================== */
+.container .slid-right {
+  position: relative;
+  background-color: white;
+}
+/* ================About section==================== */
+.container .slid-right .about {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+ 
+}
+
+.container .slid-right .about h6 {
+  margin-left: 2rem;
+  font-size: 22px;
+  margin-top: 1rem;
+  line-height: 2rem;
+  color: rgb(8, 229, 0);
+  font-weight: 900;
+}
+.container .slid-right .about p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-weight: 500;
+  text-align: justify;
+  font-size: .9rem;
+}
+/* ================   skill section  ==================== */
+.skill {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.skill h6 {
+  margin-left: 2rem;
+  font-size: 22px;
+  margin-top: 1rem;
+  line-height: 2rem;
+  color: rgb(8, 229, 0);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.skill-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.skill-section div {
+  margin-left: 2rem;
+  font-weight: 500;
+
+  line-height: 2rem;
+}
+.skill-section .parcent2 {
+  position: relative;
+  top: 0;
+  right: 2rem;
+  width: 90%;
+  height: 4px;
+  margin-top: 15px;
+  background-color: rgb(141, 141, 141);
+  border-radius: 5px;
+}
+.skill-section .parcent2 .per {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: rgb(8, 229, 0);
+  height: 100%;
+}
+/* ================Project section  ==================== */
+.Project {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.Project h6 {
+  margin-left: 2rem;
+  font-size: 22px;
+  margin-top: 1rem;
+  line-height: 2rem;
+  color: rgb(8, 229, 0);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.Project-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+.Project-section div {
+  margin-left: 2rem;
+  font-weight: 500;
+}
+/* ================insterest section  ==================== */
+.insterest {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.insterest h6 {
+  margin-left: 2rem;
+  font-size: 22px;
+  margin-top: 1rem;
+  line-height: 2rem;
+  color: rgb(8, 229, 0);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.insterest-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.insterest-section div {
+  position: relative;
+  right: 5px;
+  margin-left: 2rem;
+  font-weight: 500;
+  margin-top: 30px;
+  background-color: rgb(8, 229, 0);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 1rem;
+  padding: 3px;
+}
+.insterest-section div:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body::before {
+    font-size: 25vw;
+  }
+  .container .slid-left {
+    width: 100%;
+  }
+  .contact-info .contact {
+    width: 30%;
+    /* text-align: center; */
+    margin: 0 auto;
+  }
+  .contact-info .contact {
+    margin-bottom: 3rem;
+  }
+  .contact-info .contact h2 {
+    font-size: 1.9vw;
+  }
+  .contact-info .contact ul li h4 {
+    font-size: 12px;
+  }
+  .insterest-section {
+    margin-bottom: 2rem;
+  }
+
+ 
+
+  .container .slid-right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #img-box::before {
+    content: "";
+    position: absolute;
+    top: -86px;
+    left: -149px;
+    width: 398px;
+    height: 300px;
+   
+}
+.profile-text .text-box h1 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.profile-text .text-box span {
+ opacity: .7;
+  color: #f6f8fa;
+}
+.contact-info .contact h2 {
+  font-size: 16px;
+  
+}
+.contact-info .contact {
+  width: 50%;
+}
+
+.skill-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.skill-section .parcent2 {
+  position: relative;
+  top: 0;
+  left: 0.2rem;
+  width: 80%;
+}
+.Project-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.Project-section div {
+ 
+  margin-bottom: 2rem;
+}
+}
+@media only screen and (max-width: 600px) {
+  .contact-info .contact {
+    width: 60%;
+  }
+  .contact-info .contact ul li i {
+    
+    font-size: 3vw;
+  }
+  .contact-info .contact ul li span {
+    font-size: 3vw;
+}
+}
